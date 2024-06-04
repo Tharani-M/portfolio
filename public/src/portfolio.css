@@ -1,0 +1,382 @@
+
+body{
+    background-color: #21163f;
+    
+}
+*{
+    text-decoration: none;   
+    scroll-behavior: smooth;
+}
+
+.header{
+    background-color: rgb(27, 4, 44);
+    padding-left: 20px;
+    padding-right: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    position: sticky;
+ 
+    top: 0px;
+}
+.navdiv{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: 200px;
+    
+    
+}
+.logo a{
+    font-weight: 600;
+    font-size: 30px;
+    color:greenyellow;
+    font-family:cursive;
+    font-style: italic;
+   
+}
+.navbar a{
+color: white;
+font-size: 18px;
+justify-content: space-between;
+margin-right: 10px;
+}
+.navbar a:hover{
+color: black;
+background-color: white;
+}
+.gitlink{
+border-radius: 10px;
+}
+.gitlink a{
+    color: black;
+    font-weight: bold;
+    font-size: 18px;
+}
+#linkedin{
+    border-radius: 10px; 
+    color: black;
+    font-size: 18px;
+    font-weight: bold;
+    padding-inline: 50px;
+    align-items: center;
+    border-radius: 50px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.homecontent{
+ display: flex;
+ align-items: center;
+ position: relative;
+ justify-content: center;
+ min-height:100vh;
+ background-image: radial-gradient(circle,#162052,white  );
+}
+.hometext{
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: black;
+    padding-right: 50px;
+}
+.hometext button{
+    background-color: white;
+    text-align: center;
+    padding: 10px 20px;
+    font-weight: bold;
+    font-size: 15px;
+    color: black;
+}
+.hometext button:hover{
+    background-color:  rgb(27, 4, 44);
+    color: white;
+}
+.box{
+    display: flex;
+    position: relative;
+    width: 300px;
+    height: 300px;
+    background-color: rgba(0, 0, 0, 5);
+    overflow: hidden;
+    border-radius: 50%;
+    z-index: 1;
+    display: block;
+    object-fit: cover;
+    object-position: right;
+    background-image: radial-gradient(circle,white,#162052);
+    
+}
+.box::before{
+    content: '';
+    position: absolute;
+    inset: -25px 60px;
+    background: linear-gradient(0deg,#00ccff,#d400d4);
+   
+    transition: 0.5s;
+    animation: animate 5s linear infinite;
+}
+.box:hover::before{
+    inset: -20px 0px;
+}
+@keyframes animate {
+    0%{
+        transform: rotate(0deg)
+
+    }
+    100%{
+        transform: rotate(360deg);
+        
+    }
+    
+}
+.box::after{
+    content:'';
+    position: absolute;
+    inset: 10px;
+    background: #162052;
+    border-radius: 50%;
+    z-index: 1;
+}
+.mypic{
+    position: absolute;
+    inset : 30px;
+    border: 6px solid #070a1c;
+    z-index: 3;
+    border-radius: 50%;
+    overflow: hidden;
+    
+
+}
+
+.mypic img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height :120%;
+    object-fit: cover;
+    transform: rotate(30deg);
+
+}
+
+.contactform{
+    display: flex;
+    
+    min-height: 100vh;       
+    margin: 20px;      
+    position: relative;   
+}
+.form{
+    display: flex;
+    min-height: 100vh;
+    min-width: 110vh;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    background-image:linear-gradient(to right,#162052,rgb(241, 233, 233));
+ 
+    
+}
+
+.contact-left{
+    display: flex;
+   
+    min-height: 100vh;
+    min-width: 100vh;
+    background-image: linear-gradient(to right,rgb(241, 233, 233),#162052);
+    align-items: center;
+    justify-content: center;
+}
+.contact-left img{
+
+    height: 50px;
+    width : 50px;
+    image-rendering: crisp-edges;
+}
+.contactform button{
+    padding: 10px;
+    background-color:#21163f ;
+    font-size: 15px;
+    font-weight: bold;
+    color:white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+.contactform input{
+    font-size: 20px;
+    padding: 10px;
+    justify-content: end;
+    background-color: white;
+    color: black;
+    align-self: self-end;
+}
+
+.skills{
+    display: flex;
+    background-color: white;
+    min-height: 100vh;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 30px;
+    position: static;
+  
+}
+.skills h1{
+    align-items: center;
+    padding-left: 700px;
+    padding-right: 650px;
+   padding-bottom: 20px;
+   
+}
+.skill{
+    position: static;
+ background-color:rgb(27, 4, 44);
+ margin: 2px;
+ padding: 5px; 
+ height: 200px;
+ width: 200px;
+ margin: 10px;
+
+}
+
+svg {
+    width: 114px;
+    height: 114px;
+    margin: 1em;
+    padding: 20px;
+    position: absolute;
+  
+   
+  }
+
+  
+  .bg {
+    fill: none;
+    stroke-width: 10px;
+    stroke: grey;
+  }
+  
+  [class^="meter-"] {
+    fill: none;
+    stroke-width: 10px;
+    stroke-linecap: round;
+    transform: rotate(-90deg);
+    transform-origin: 50% 50%;
+    
+  }
+  .meter-1 {
+    stroke: white;
+    stroke-dasharray: 360;
+    stroke-dashoffset: 130;
+   
+  }
+  .meter-2 {
+    stroke-dasharray:360;
+    stroke-dashoffset: 130;
+    stroke: white;
+    
+  }
+  
+  .meter-3 {
+    stroke:white;
+    stroke-dasharray: 360;
+    stroke-dashoffset: 130;
+   
+  }
+
+  #experience{
+    display: flex;
+    position:relative;
+    
+    height: 100vh;
+}  
+.expnavbar{
+    top: 0;
+    display: flex;
+    flex-direction: row;
+    min-width:90%;
+   background-image: radial-gradient(circle,white 30%,#162052 );
+   padding: 10px;
+   height: 70px;
+   justify-content: space-around;
+}
+button{
+    padding: 5px;
+    border-radius: 5px;
+    border-width: 3px;
+    color: black;
+    background-color: white;  
+    font-style: bold;
+ }
+ .sidebar{
+    display: flex;
+    height: 98vh;
+    width:10%;
+    padding: 5px;
+    flex-direction: column;  
+    justify-content:space-around;
+    align-items: left;
+   
+   background-image: radial-gradient(circle,white 30%,#162052 );
+}
+.info{
+    display: flex;
+    position: absolute;
+    border-radius: 15px 50px;
+    background:white;
+    padding: 20px; 
+   flex-wrap: wrap;
+    height: 80vh;
+    width: 89%;
+    top: 14%;
+    left: 130px;  
+}
+#saginfotitle{
+   padding: 50px;
+}
+#ramcoinfotitle{
+    padding: 50px;
+}
+#exp1{
+    padding: 5px;
+    font-size: 15px;
+}
+#exp2{
+    padding: 5px;
+    font-size: 15px;
+}
+#exp3{
+    padding: 5px;
+    font-size: 15px;
+}
+#exp4{
+    padding: 5px;
+    font-size: 15px;
+}
+#exp1:hover{
+    background-color:white  ;
+    color: rgb(27, 4, 44);
+}
+#exp2:hover{
+    background-color:white  ;
+    color: rgb(27, 4, 44);
+}
+#exp3:hover{
+    background-color:white  ;
+    color: rgb(27, 4, 44);
+}
+#exp4:hover{
+    background-color:white  ;
+    color: rgb(27, 4, 44);
+}
+.ramcoinfo{
+    font-size: 20px;
+}
+.achievementsinfo{
+    font-size: 20px;
+}
+.projectsinfo{
+    font-size: 20px;
+}
+
+
+   
+    
+ 

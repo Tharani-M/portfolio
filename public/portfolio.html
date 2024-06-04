@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="portfolio.css">
+    <script src="portfolio.js" defer></script>
+</head>
+
+</html>
+
+<body>
+    <header class="header">
+        <div class="navdiv">
+            <div class="logo"><a href="#">Portfolio.</a></div>
+            <nav class="navbar"> 
+                <a href="#homecontent">Home</a> 
+                <a href="#experience">Professional Experience</a> 
+                <a href="#contactform">Contact</a>
+                <!--  <button class="gitlink"><a href="#">Github</a></button> -->
+            </nav>
+        </div>
+        </div>
+    </header>
+    <div class="homecontent" id="homecontent">
+        <div class="hometext">
+            <h4>Hello there, It's Me</h4>
+            <h3>Tharani Moorthy</h3>
+            <p> This is my official portfolio website to show all Details and work experience and skills in software development.</p>
+            <i class="fa-brands fa-linkedin"></i> <a href="Tharani-Resume.pdf" class="fa-brands fa-linkedin">
+                <button type="button">Download Resume</button>
+                <button type="button"><a href="https://www.linkedin.com/in/tharani-m-7b00b4198/">LinkedIn</a></button>
+                <button type="button"><a href="https://github.com/Tharani-M">GitHub</a></button> <!--  <button id="linkedin">LinkedIn</button> -->
+        </div>
+        <!-- <div class="box">
+            <div class="mypic"> <img src="mypic.png" alt="It's my image" width="300" height=400" /> </div>
+        </div> -->
+    </div>
+    <!-- <div class="skills">
+        <h1>Skills</h1>
+        <div class="skill"> <svg>
+                <circle class="bg" cx="57" cy="57" r="52" />
+                <circle class="meter-1" cx="57" cy="57" r="52" /> <text x="60" y="60" font-size="16"
+                    text-anchor="middle" fill="white">SQL Server</text> <text x="60" y="79" font-size="18"
+                    text-anchor="middle" fill="white">80%</text>
+            </svg> </div>
+        <div class="skill"> <svg>
+                <circle class="bg" cx="57" cy="57" r="52" />
+                <circle class="meter-1" cx="57" cy="57" r="52" /> <text x="60" y="60" font-size="16"
+                    text-anchor="middle" fill="white">Python</text> <text x="60" y="79" font-size="18"
+                    text-anchor="middle" fill="white">80%</text>
+            </svg> </div>
+        <div class="skill"> <svg>
+                <circle class="bg" cx="57" cy="57" r="52" />
+                <circle class="meter-3" cx="57" cy="57" r="52" /> <text x="60" y="60" font-size="16"
+                    text-anchor="middle" fill="white">RestAPI</text> <text x="60" y="79" font-size="18"
+                    text-anchor="middle" fill="white">80%</text>
+            </svg> </div>
+    </div> -->
+
+    <div id="experience">
+        <div class="sidebar"><h1>Tech stack</h1>
+          <!-- <button class="sag" id="sagpython">Python</button>
+          <button class="sag" id="sagdgflow">Dialogflow</button> -->
+          <h4 class="sag">Python&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h4>
+          <h4 class="sag">Elasticsearch</h4>
+          <h4 class="sag">NLTK Library</h4>
+          <h4 class="sag">Scrapy framework</h4>
+          <h4 class="sag">Dialogflow ES</h4>
+          <h4 class="ramco">MS SQL&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h4>
+          <h4 class="ramco">Rest API design</h4>
+          <h4 class="ramco">GraphQL API design</h4>
+          <h4 class="projects">HTML & CSS</h4>
+          <h4 class="projects">Java Script</h4>
+          <h4 class="projects">Python&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h4>
+          
+        </div>
+        <div class="info">
+          
+          <div class="saginfo">
+            <h1 id="saginfotitle">R & D Intern At SoftwareAG<br><br>[May 2021-Sep 2021]</h1>
+            <ul >
+              <li><b>Requirement Gathering:</b>Developed a chatbot application to answer the customers regarding the software.</li>
+              <br>
+              <li><b>Design Phase:</b>Determined the conversational flow, intents and responces</li>
+              <br>
+              <li><b>Dialogflow Setup:</b>Set up a Dialogflow agent and configure intents, entities, and training phrases to handle user queries and responses effectively. Integrate with flask API.</li>
+              <br>
+              <li><b>Collecting data :</b>To achieve this took data from from various sources like product documentation,ARIS community forums by using scrapy.
+              </li>
+              <br>
+              <li><b>Data cleaning</b>Cleaned the data using a pipeline built with  NLTK library to extract the keywords from the unnoticed questions
+              </li>
+              <br>
+              <li><b>Data storage: </b>Stored it in elastic search and handling of unexpected queries done through the interaction between the elastic search and dialogflow web hooks using flask
+              </li>
+              <br>
+              <li><b>Data feed :</b> automatic question generator is used to generate the questions from the the sentences and fed them into dialogflow as intents
+              </li>
+              <br>
+              <li><b>Hosting :</b>Embedded the chat application in the aris community site. 
+              </li>
+              <br>
+              <li><b>Feedback and Iteration :</b>Gather feedback from the stakeholders  to identify areas for improvement and enhancement. Iterate on the chat application based on feedback to continuously enhance its functionality, usability, and effectiveness.
+              </li>
+              <br>
+              <li>Thoroughly tested ARIS Advance Cloud and Enterprise Portal features, documented bugs with improvement recommendations at each sprint's end, and recorded issues in the JIRA tracking system</li>
+              <br>
+              <li><b>Git Hub Link&nbsp;&nbsp;:&nbsp;&nbsp; <a href="https:///github.com/Tharani-M/SAG_Project">https:///github.com/Tharani-M/SAG_Project</b></a>
+              </li>
+              <br>
+            </ul>
+          </div>
+          <div class="ramcoinfo">
+            <h1 id="ramcoinfotitle">Analyst Programmer at Ramco Systems<br><br>[Sep 2021-Sep 2023]</h1>
+            <ul >
+              <li><b>Ms-SQL : </b>Contributed in marshalling and kitting feature which tracks the part info from soucing to delivery</li>
+              <br>
+              <li>Understand the requirements of the feature and designed using RVW</li>
+              <br>
+              <li>Developed stored procedure using joins, CTE,cursors,developed a SSRS report using microsoft visual studio to view the quotes of a part. then Push the SP into GIT repository 
+              </li>
+              <br>
+              <li>Retrieved JSON data from API response, parse, transform, load into SQL Server, and perform functionalities using T-SQL for data processing.</li>
+              <br>
+              <li><b>Rset API : </b>The design, development, and debugging processes were carried out within the context of a RESTful API. Deployements done in Microsoft IIS server.</li>
+              <br>
+              <li><b>GraphQL API : </b>To fasten the data retrieval and overcome under fetching and overfetching problems</li>
+              <li>Used RPA Framework to automate reminder notifications for customers, boosting efficiency in our aviation product, streamlining communication and operational processes.</li>
+              <br>  
+              <li><b>Certification&nbsp;&nbsp;:&nbsp;&nbsp; <a href="https:///github.com/Tharani-M/SAG_Project">https:///github.com/Tharani-M/SAG_Project</b></a>
+            </ul>
+          </div>
+          <div class="achievementsinfo">
+            <ul>
+              <li><b>Hackathon 1 @ Ramco :</b>Developed a Microservice application</li><br>
+              <li>Won<b>2nd</b>runner up</li><br>
+              <li><b>Tech stack :</b>HTML,CSS, React JS</li><br><br>
+              <li><b>Hackathon 2 @ Ramco :</b>Developed application using GraphQL</li><br>
+              <li>Won<b>1st</b>runner up</li><br>
+              <li><b>Tech stack :</b>RVW,GraphQL,Docker</li><br><br>
+            </ul>
+          </div>
+          <div class="projectsinfo">
+            <ul>
+              <li><b>Prortfolio website :</b></li><br>
+              <li><b>Tech stack :</b>HTML,CSS, Java Script</li><br><br>
+              <li><b>Accident analysis using apriori algorithm :</b></li><br>
+              <li><b>Git Hub Link&nbsp;&nbsp;:&nbsp;&nbsp; <a href="https:///github.com/Tharani-M/SAG_Project">https:///github.com/Tharani-M/SAG_Project</b></a><br><br>
+              <li>The consolidated accident data using Excel is manipulated by the Apriori algorithm to generate association rules and graph to discover the hiddenpattern to reducethe number of accidents.</li><br>
+              <li><b>Tech stack :</b>Python,Excel</li><br><br>
+              <li><b>Git Hub Link&nbsp;&nbsp;:&nbsp;&nbsp; <a href="https:///github.com/Tharani-M/SAG_Project">https:///github.com/Tharani-M/SAG_Project</b></a>
+            </ul>
+          </div>
+          
+        </div>
+        <div class="expnavbar">
+          <h1>Experiences</h1>
+          <button id="exp1">SoftwareAG</button>
+          <button id="exp2">Ramco Systems</button>
+          <button id="exp3">Achievements</button>
+          <button id="exp4">Projects</button>
+          
+        </div>
+      </div>
+ 
+    <div class="contactform" id="contactform">
+        <div class="contact-left">
+            <h1>Get in touch</h1>
+    
+        </div>
+        <div class="form">
+            <form action="portfolio.py" method="get" class> <input type="text" placeholder="Name" required><br><br><br>
+                <input type="email" placeholder="Email" required><br><br><br>
+                <input type="text" placeholder="Message" minlength="1" maxlength="100"><br><br><br>
+                <button  type="submit">Submit</button>
+            </form>
+    
+        </div>
+    </div>
+    </body>
+
+</html>
+
